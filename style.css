@@ -1,0 +1,144 @@
+/* RESET */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    align-items: center; 
+}
+
+body {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+        url("images/bg.jpeg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* CARD */
+.card {
+    border-radius: 12px;
+    border: none;
+    background: rgba(255, 255, 255, 0.96);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+     width: 100%;
+    max-width: 600px;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* HEADER */
+.card-header {
+    background: linear-gradient(135deg, #ff9a3c, #ff6f00);
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+}
+
+/* INPUTS */
+.form-control {
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* INPUT FOCUS GLOW */
+.form-control:focus {
+    border-color: #ff9a3c;
+    box-shadow: 0 0 0 0.2rem rgba(255, 154, 60, 0.25);
+}
+
+/* BUTTON */
+.btn-dark {
+    background: linear-gradient(135deg, #ff9a3c, #ff6f00);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: 600;
+    transition: all 0.35s ease;
+}
+
+/* BUTTON HOVER */
+.btn-dark:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 111, 0, 0.5);
+    background: linear-gradient(135deg, #ff6f00, #e65100);
+}
+
+/* BUTTON ACTIVE */
+.btn-dark:active {
+    transform: scale(0.97);
+}
+
+/* CHECKBOX */
+.form-check-input {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.form-check-input:hover {
+    transform: scale(1.15);
+}
+
+/* ERROR TEXT */
+.error {
+    font-size: 13px;
+}
+
+/* MODAL ANIMATION */
+.modal.fade .modal-dialog {
+    transform: scale(0.85);
+    transition: transform 0.3s ease;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* MODAL HEADER */
+.modal-header.bg-success {
+    background: linear-gradient(135deg, #ff9a3c, #ff6f00) !important;
+    border: none;
+}
+
+/* MODAL BUTTON */
+.modal-footer .btn-success {
+    background: linear-gradient(135deg, #ff9a3c, #ff6f00);
+    border: none;
+    border-radius: 25px;
+    padding: 8px 22px;
+    transition: all 0.3s ease;
+}
+
+.modal-footer .btn-success:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 111, 0, 0.5);
+}
+
+/* SMALL SCREEN */
+@media (max-width: 576px) {
+    .card:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+
+/* ICON STYLING */
+.input-group-text {
+    background: transparent;
+    border-right: none;
+    color: #ff9a3c;
+    transition: all 0.3s ease;
+}
+
+.form-control {
+    border-left: none;
+}
+
+/* ICON ANIMATE ON FOCUS */
+.input-group:focus-within .input-group-text {
+    color: #ff6f00;
+    transform: scale(1.1);
+}
